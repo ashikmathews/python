@@ -1,0 +1,237 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "3afb8bac-705c-404e-8797-29c744e57b8f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "List of random numbers: [12, 45, 78, 34, 23]\n"
+     ]
+    }
+   ],
+   "source": [
+    "random_numbers = [12, 45, 78, 34, 23]\n",
+    "print(\"List of random numbers:\", random_numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "61ce60fd-d5df-48b4-b0fa-a04eb61afb98",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Updated list: [12, 45, 78, 34, 23, 67, 89, 56]\n"
+     ]
+    }
+   ],
+   "source": [
+    "random_numbers.extend([67, 89, 56])  \n",
+    "print(\"Updated list:\", random_numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "e3a2b948-48c8-489a-abd9-af826bb879da",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Element in list: 12\n",
+      "Element in list: 45\n",
+      "Element in list: 78\n",
+      "Element in list: 34\n",
+      "Element in list: 23\n",
+      "Element in list: 67\n",
+      "Element in list: 89\n",
+      "Element in list: 56\n"
+     ]
+    }
+   ],
+   "source": [
+    "for number in random_numbers:\n",
+    "    print(\"Element in list:\", number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "0b44f645-0f90-4662-8747-64d525601635",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Dictionary: {'name': 'John', 'age': 25, 'address': 'New York'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "person = {'name': 'John', 'age': 25, 'address': 'New York'}\n",
+    "print(\"Dictionary:\", person)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "a59d80f7-b23b-4626-8440-9fffc848c722",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Updated dictionary: {'name': 'John', 'age': 25, 'address': 'New York', 'phone': '1234567890'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "person['phone'] = '1234567890'\n",
+    "print(\"Updated dictionary:\", person)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "cd612d2f-2979-4f9c-9171-dcf06ff16174",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Set: {1, 2, 3, 4, 5}\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers_set = {1, 2, 3, 4, 5}\n",
+    "print(\"Set:\", numbers_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "9ee00e0f-71c8-4668-95dd-40e1ad170595",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Set after adding 6: {1, 2, 3, 4, 5, 6}\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers_set.add(6)\n",
+    "print(\"Set after adding 6:\", numbers_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "b3ac5d23-d1d2-48bc-a10f-e843d3cd69b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Set after removing 3: {1, 2, 4, 5, 6}\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers_set.discard(3)  \n",
+    "print(\"Set after removing 3:\", numbers_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "4dd1c6f8-f141-42d6-a63a-28fcf6a4806f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Tuple: (1, 2, 3, 4)\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers_tuple = (1, 2, 3, 4)\n",
+    "print(\"Tuple:\", numbers_tuple)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "3ec49360-917b-4ddd-8312-3cfad89d85bb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Length of the tuple: 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Length of the tuple:\", len(numbers_tuple))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bcbf7d01-e140-4333-9830-554c93b2552f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7d6e12fa-cd5a-47cd-9e83-16488f4cbef9",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
